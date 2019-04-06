@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import pm.c7.paxels.item.PaxelItem;
 
 public class Paxels implements ModInitializer {
-    public static final String MOD_ID = "fabricpaxels";
+    public static final String MOD_ID = "variablepaxels";
 
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.create(
         new Identifier(MOD_ID,"items"))

@@ -1,6 +1,6 @@
 {
-    "id": "fabricpaxels",
-    "name": "Paxels",
+    "id": "variablepaxels",
+    "name": "VariablePaxels",
     "description": "The classic multitool.",
     "version": "${version}",
     "side": "universal",

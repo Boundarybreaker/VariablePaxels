@@ -1,4 +1,4 @@
-# FabricPaxels [![](https://jitpack.io/v/Cynosphere/FabricPaxels.svg)](https://jitpack.io/#Cynosphere/FabricPaxels)
+# VariablePaxels [![](https://jitpack.io/v/Cynosphere/VariablePaxels.svg)](https://jitpack.io/#Cynosphere/VariablePaxels)
 The classic multitool now on Fabric
 
 **This mod was a feature originally part of [Variability](https://gitlab.com/Cynosphere/variability-fabric).**
@@ -19,7 +19,7 @@ Then add to dependencies
 
 ```
 dependencies {
-  modCompile 'com.github.Cynosphere:FabricPaxels:<game version>-<mod version>'
+  modCompile 'com.github.Cynosphere:VariablePaxels:<game version>-<mod version>'
 }
 ```
 
@@ -36,16 +36,16 @@ import pm.c7.paxels.Paxels;
 import pm.c7.paxels.item.PaxelItem;
 
 public class MyPaxelMod extends ModInitializer {
-  //...
-  
-  //use whatever ToolMaterial and optionally whatever item group.
-  //if you're just adding basic paxels and don't want to make an item group feel free to just throw it into the mod's
-  public static final PaxelItem MY_PAXEL = PaxelItem(ToolMaterials.DIAMOND, new Item.Settings().stackSize(1).itemGroup(Paxels.ITEM_GROUP));
-  
-  @Override
-  public void onInitialize() {
-    Registry.register(Registry.ITEM, new Identifier("mypaxelmod","my_paxel"), MY_PAXEL);
-  }
+    //...
+
+    //use whatever ToolMaterial and optionally whatever item group.
+    //if you're just adding basic paxels and don't want to make an item group feel free to just throw it into the mod's
+    public static final PaxelItem MY_PAXEL = PaxelItem(ToolMaterials.DIAMOND, new Item.Settings().stackSize(1).itemGroup(Paxels.ITEM_GROUP));
+
+    @Override
+    public void onInitialize() {
+        Registry.register(Registry.ITEM, new Identifier("mypaxelmod","my_paxel"), MY_PAXEL);
+    }
 }
 ```
 ### Textures
