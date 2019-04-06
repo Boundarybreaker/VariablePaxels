@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+    "pattern": ["123", " # ", " # "],
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+        },
+        "1": {
+            "item": "minecraft:diamond_axe"
+        },
+        "2": {
+            "item": "minecraft:diamond_shovel"
+        },
+        "3": {
+            "item": "minecraft:diamond_pickaxe"
+        }
+    },
+    "result": {
+        "item": "fabricpaxels:diamond_paxel"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "id": "fabricpaxels",
+    "name": "Paxels",
+    "description": "The classic multitool.",
+    "version": "${version}",
+    "side": "universal",
+    "initializers": ["pm.c7.paxels.Paxels"],
+    "requires": {
+        "fabric": "*"
+    }
+}
