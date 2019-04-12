@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "fabricpaxels:item/diamond_paxel"
+        "layer0": "variablepaxels:item/diamond_paxel"
     }
 }

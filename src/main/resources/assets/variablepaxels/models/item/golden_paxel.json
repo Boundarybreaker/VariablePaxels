@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "fabricpaxels:item/golden_paxel"
+        "layer0": "variablepaxels:item/golden_paxel"
     }
 }

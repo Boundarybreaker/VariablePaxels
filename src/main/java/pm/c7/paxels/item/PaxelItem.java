@@ -59,12 +59,12 @@ public class PaxelItem extends MiningToolItem {
                 BlockState blockState_1 = (BlockState)GRASS_TO_PATH.get(world.getBlockState(blockPos).getBlock());
                 if (blockState_1 != null) {
                     PlayerEntity player = ctx.getPlayer();
-                    world.playSound(player, blockPos, SoundEvents.ITEM_SHOVEL_FLATTEN, SoundCategory.BLOCK, 1.0F, 1.0F);
+                    world.playSound(player, blockPos, SoundEvents.ITEM_SHOVEL_FLATTEN, SoundCategory.BLOCKS, 1.0F, 1.0F);
                     if (!world.isClient) {
                         world.setBlockState(blockPos, blockState_1, 11);
                         if (player != null) {
                             ctx.getItemStack().applyDamage(1, player, (ply) -> {
-                                ply.sendToolBreakStatus(ctx.method_20287());
+                                ply.sendToolBreakStatus(ctx.getHand());
                             });
                         }
                     }
@@ -77,12 +77,12 @@ public class PaxelItem extends MiningToolItem {
             Block block = (Block)BLOCK_TRANSFORMATIONS_MAP.get(blockState.getBlock());
             if (block != null) {
                 PlayerEntity player = ctx.getPlayer();
-                world.playSound(player, blockPos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCK, 1.0F, 1.0F);
+                world.playSound(player, blockPos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 1.0F, 1.0F);
                 if (!world.isClient) {
                     world.setBlockState(blockPos, (BlockState)block.getDefaultState().with(PillarBlock.AXIS, blockState.get(PillarBlock.AXIS)), 11);
                     if (player != null) {
                         ctx.getItemStack().applyDamage(1, player, (ply) -> {
-                            ply.sendToolBreakStatus(ctx.method_20287());
+                            ply.sendToolBreakStatus(ctx.getHand());
                         });
                     }
                 }
