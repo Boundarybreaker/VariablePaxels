@@ -2,28 +2,21 @@
     "schemaVersion": 1,
     "id": "variablepaxels",
     "version": "${version}",
-
     "name": "VariablePaxels",
     "description": "The classic multitool.",
     "authors": ["Cynosphere"],
     "contact": {
         "sources": "https://github.com/Cynosphere/VariablePaxels"
     },
-
     "license": "MIT",
     "icon": "assets/variablepaxels/icon.png",
-
     "environment": "*",
     "entrypoints": {
         "main": ["pm.c7.paxels.Paxels"]
     },
     "mixins": [],
-
     "requires": {
         "fabricloader": ">=0.4.0",
         "fabric": "*"
-    },
-    "suggests": {
-        "variability": "*"
     }
 }

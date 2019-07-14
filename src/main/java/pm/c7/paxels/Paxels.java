@@ -18,11 +18,11 @@ public class Paxels implements ModInitializer {
         .icon(() -> new ItemStack(Paxels.DIAMOND_PAXEL))
         .build();
 
-    public static final PaxelItem WOODEN_PAXEL = new PaxelItem(ToolMaterials.WOOD, new Item.Settings().stackSize(1).itemGroup(Paxels.ITEM_GROUP));
-    public static final PaxelItem STONE_PAXEL = new PaxelItem(ToolMaterials.STONE, new Item.Settings().stackSize(1).itemGroup(Paxels.ITEM_GROUP));
-    public static final PaxelItem IRON_PAXEL = new PaxelItem(ToolMaterials.IRON, new Item.Settings().stackSize(1).itemGroup(Paxels.ITEM_GROUP));
-    public static final PaxelItem GOLDEN_PAXEL = new PaxelItem(ToolMaterials.GOLD, new Item.Settings().stackSize(1).itemGroup(Paxels.ITEM_GROUP));
-    public static final PaxelItem DIAMOND_PAXEL = new PaxelItem(ToolMaterials.DIAMOND, new Item.Settings().stackSize(1).itemGroup(Paxels.ITEM_GROUP));
+    public static final PaxelItem WOODEN_PAXEL = new PaxelItem(ToolMaterials.WOOD, new Item.Settings().maxDamage(177).group(Paxels.ITEM_GROUP));
+    public static final PaxelItem STONE_PAXEL = new PaxelItem(ToolMaterials.STONE, new Item.Settings().maxDamage(393).group(Paxels.ITEM_GROUP));
+    public static final PaxelItem IRON_PAXEL = new PaxelItem(ToolMaterials.IRON, new Item.Settings().maxDamage(750).group(Paxels.ITEM_GROUP));
+    public static final PaxelItem GOLDEN_PAXEL = new PaxelItem(ToolMaterials.GOLD, new Item.Settings().maxDamage(96).group(Paxels.ITEM_GROUP));
+    public static final PaxelItem DIAMOND_PAXEL = new PaxelItem(ToolMaterials.DIAMOND, new Item.Settings().maxDamage(4683).group(Paxels.ITEM_GROUP));
 
     @Override
     public void onInitialize() {
