@@ -12,11 +12,15 @@
     "icon": "assets/variablepaxels/icon.png",
     "environment": "*",
     "entrypoints": {
-        "main": ["pm.c7.paxels.Paxels"]
+        "main": ["pm.c7.paxels.Paxels"],
+        "dynagear:equipment_types": ["pm.c7.paxels.DynaGearIntegration"]
     },
     "mixins": [],
-    "requires": {
+    "depends": {
         "fabricloader": ">=0.4.0",
         "fabric": "*"
+    },
+    "recommends": {
+        "dynagear": ">=1.3.1+1.14.4"
     }
 }

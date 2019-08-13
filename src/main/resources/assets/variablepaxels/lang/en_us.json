@@ -4,5 +4,7 @@
     "item.variablepaxels.stone_paxel": "Stone Paxel",
     "item.variablepaxels.iron_paxel": "Iron Paxel",
     "item.variablepaxels.golden_paxel": "Golden Paxel",
-    "item.variablepaxels.diamond_paxel": "Diamond Paxel"
+    "item.variablepaxels.diamond_paxel": "Diamond Paxel",
+
+    "item.dynagear.paxel": "%s Paxel"
 }

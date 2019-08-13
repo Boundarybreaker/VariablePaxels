@@ -30,8 +30,11 @@ public class PaxelItem extends MiningToolItem {
     private static final Map<Block, Block> STRIPPED_BLOCKS;
     private static final Map<Block, BlockState> PATH_BLOCKSTATES;
 
+    ToolMaterial material;
+
     public PaxelItem(ToolMaterial material, Settings settings) {
         super(8F, -3.1F, material, EFFECTIVE_BLOCKS, settings);
+        this.material = material;
     }
 
     public float getMiningSpeed(ItemStack stack, BlockState state) {
@@ -44,6 +47,8 @@ public class PaxelItem extends MiningToolItem {
         int int_1 = this.getMaterial().getMiningLevel();
         if (block == Blocks.OBSIDIAN) {
             return int_1 == 3;
+        } else if (block == Blocks.SNOW || block == Blocks.SNOW_BLOCK) {
+            return true;
         } else if (block != Blocks.DIAMOND_BLOCK && block != Blocks.DIAMOND_ORE && block != Blocks.EMERALD_ORE && block != Blocks.EMERALD_BLOCK && block != Blocks.GOLD_BLOCK && block != Blocks.GOLD_ORE && block != Blocks.REDSTONE_ORE) {
             if (block != Blocks.IRON_BLOCK && block != Blocks.IRON_ORE && block != Blocks.LAPIS_BLOCK && block != Blocks.LAPIS_ORE) {
                 Material material = state.getMaterial();

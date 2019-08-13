@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.2.3-SNAPSHOT'
+	id 'fabric-loom' version '0.2.4-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -14,8 +14,12 @@ minecraft {
 }
 
 repositories {
+	mavenCentral()
     maven { url "https://minecraft.curseforge.com/api/maven"}
     maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+	maven { url "http://server.bbkr.space:8081/artifactory/libs-release/" }
+	maven { url "https://jitpack.io/" }
+	maven { url "http://maven.swordglowsblue.com/" }
 }
 
 dependencies {
@@ -26,6 +30,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modCompile ("io.github.cottonmc:DynaGear:${project.dynagear_version}"){exclude(group:'net.fabricmc.fabric-api',module:'fabric-api') exclude(group:'net.fabricmc',module:'fabric-loader')}
 }
 
 processResources {
