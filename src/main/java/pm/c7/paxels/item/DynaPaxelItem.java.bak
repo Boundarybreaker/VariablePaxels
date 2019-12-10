@@ -2,7 +2,6 @@ package pm.c7.paxels.item;
 
 import io.github.cottonmc.dynagear.api.ConfiguredMaterial;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ToolMaterial;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 

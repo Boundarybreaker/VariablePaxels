@@ -13,7 +13,7 @@
     "environment": "*",
     "entrypoints": {
         "main": ["pm.c7.paxels.Paxels"],
-        "dynagear:equipment_types": ["pm.c7.paxels.DynaGearIntegration"]
+        "//dynagear:equipment_types": ["pm.c7.paxels.DynaGearIntegration"]
     },
     "mixins": [],
     "depends": {

@@ -6,7 +6,6 @@ import io.github.cottonmc.dynagear.api.EquipmentCategory;
 import io.github.cottonmc.dynagear.api.EquipmentType;
 import io.github.cottonmc.dynagear.api.EquipmentTypeAdder;
 import io.github.cottonmc.dynagear.impl.EquipmentManager;
-import io.github.cottonmc.dynagear.impl.SimpleEquipmentType;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import pm.c7.paxels.item.DynaPaxelItem;
